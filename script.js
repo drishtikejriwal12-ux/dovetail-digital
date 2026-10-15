@@ -89,9 +89,20 @@
     e.preventDefault();
     tried = true;
     if (!validate()) return;
-    // INTEGRATION POINT: send the form data (name, email, company, service, message)
-    // to your form endpoint here, e.g. fetch('/api/contact', { method:'POST', body:new FormData(form) }),
-    // and only show the success state once it responds OK. Until then, no data leaves the page.
+    // No backend: open the visitor's email app with the message ready to send to the studio.
+    // To use a form service instead, replace this with a fetch() to its endpoint and show the
+    // success state only once it responds OK.
+    var lines = [
+      'Name: ' + f.name.value.trim(),
+      'Email: ' + f.email.value.trim(),
+      'Company: ' + (form.elements.company.value.trim() || '-'),
+      'Service: ' + (form.elements.service.value || '-'),
+      '',
+      f.message.value.trim()
+    ];
+    window.location.href = 'mailto:dovetail.digital@gmail.com' +
+      '?subject=' + encodeURIComponent('Project enquiry from ' + f.name.value.trim()) +
+      '&body=' + encodeURIComponent(lines.join('\n'));
     document.getElementById('t-name').textContent = f.name.value.trim();
     document.getElementById('t-email').textContent = f.email.value.trim();
     form.hidden = true;

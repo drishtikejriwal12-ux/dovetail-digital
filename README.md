@@ -18,7 +18,7 @@ Then visit http://localhost:8000.
 | --- | --- |
 | `index.html` | Page markup: header, hero, work, services, studio, process, contact, footer |
 | `styles.css` | All styling, driven by CSS custom properties (design tokens) |
-| `case-study-crewnox.html` | The real case study (Crewnox website redesign) |
+| `case-study-crewnox.html` | The real case study (Crewnox website redesign), with its screens hosted on Framer |
 | `case-study-*.html` | Four concept case study pages (Fieldnote, Tidewell, Marrow & Co., Plotline), each with overview, process and the screens shipped |
 | `script.js` | Mobile menu, concept brief toggles, services accordion, contact form validation |
 
@@ -44,7 +44,7 @@ Fonts: Instrument Serif (headlines) and Manrope (body), loaded from Google Fonts
 
 ## Contact form
 
-The form validates name, email and message on the client. It does not send data anywhere yet. To go live, add your endpoint at the `INTEGRATION POINT` comment in `script.js` and show the success state only after the request succeeds.
+The form validates name, email and message, then opens the visitor's email app with the message ready to send to dovetail.digital@gmail.com. To use a form service instead, replace the `mailto:` step in `script.js` with a request to its endpoint.
 
 ## Deploy
 
