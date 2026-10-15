@@ -18,7 +18,8 @@ Then visit http://localhost:8000.
 | --- | --- |
 | `index.html` | Page markup: header, hero, work, services, studio, process, contact, footer |
 | `styles.css` | All styling, driven by CSS custom properties (design tokens) |
-| `case-study-*.html` | Four full case study pages (Fieldnote, Tidewell, Marrow & Co., Plotline), each with overview, process and the screens shipped |
+| `case-study-crewnox.html` | The real case study (Crewnox website redesign) |
+| `case-study-*.html` | Four concept case study pages (Fieldnote, Tidewell, Marrow & Co., Plotline), each with overview, process and the screens shipped |
 | `script.js` | Mobile menu, concept brief toggles, services accordion, contact form validation |
 
 ## Case studies

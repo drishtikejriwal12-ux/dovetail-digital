@@ -226,3 +226,27 @@ footer .eyebrow{color:#B9AE9C}
 .cs-next .btn{background:var(--ground);color:var(--ink);border-color:var(--ground)}
 .cs-next .btn:hover,.cs-next .btn:focus-visible{background:var(--accent);border-color:var(--accent);color:var(--ground)}
 .shot.wide .browser{height:86%;max-height:none}
+
+/* real case study + featured card */
+.cs-img{display:block;width:100%;height:auto;background:#E7DECB}
+.cs-fig{margin:0}
+.cs-fig figcaption{margin-top:10px;font-size:14px;color:var(--muted)}
+.mood{margin-top:clamp(28px,4vw,48px);columns:3 240px;column-gap:clamp(12px,2vw,24px)}
+.mood .cs-fig{break-inside:avoid;margin-bottom:clamp(12px,2vw,24px)}
+.cs-sys{align-items:start;margin-bottom:clamp(28px,4vw,48px)}
+.pal{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.pal li{display:grid;gap:4px}
+.pal span{display:block;aspect-ratio:3/2;border:1px solid var(--line)}
+.pal b{font-size:13px;letter-spacing:.06em;text-transform:uppercase}
+.pal code{font:500 13px/1 ui-monospace,Menlo,monospace;color:var(--muted)}
+.cs-list{margin-top:24px;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(300px,100%),1fr));gap:0 40px}
+.cs-list li{padding:10px 0;border-bottom:1px solid #b9ae9c;font-weight:600}
+.cs-screens{margin-top:clamp(32px,5vw,56px);display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(20px,3vw,40px);align-items:start}
+@media (max-width:760px){.cs-screens{grid-template-columns:minmax(0,1fr)}}
+.cs-confirm{margin-top:clamp(20px,3vw,40px);max-width:480px}
+.feat{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(380px,100%),1fr));gap:clamp(24px,4vw,64px);align-items:center;margin-bottom:clamp(56px,8vw,112px)}
+.feat .art{aspect-ratio:4/3;background:#0A0A0A}
+.feat .art img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:top;transition:transform .8s cubic-bezier(.2,.7,.2,1)}
+.feat:hover .art img{transform:scale(1.04)}
+.feat h3{font-size:clamp(44px,5vw,72px);line-height:1;letter-spacing:-.015em}
+.feat .badge{display:inline-block;padding:4px 10px;background:var(--accent);color:var(--paper);font-size:11px;font-weight:700;letter-spacing:.14em;text-transform:uppercase}
