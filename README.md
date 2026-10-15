@@ -1,0 +1,51 @@
+# Dovetail
+
+Website for Dovetail, a digital design studio. Plain HTML, CSS and vanilla JavaScript, with no framework and no build step.
+
+## Run locally
+
+Open `index.html` in a browser, or serve the folder:
+
+```
+python3 -m http.server 8000
+```
+
+Then visit http://localhost:8000.
+
+## Structure
+
+| File | Purpose |
+| --- | --- |
+| `index.html` | Page markup: header, hero, work, services, studio, process, contact, footer |
+| `styles.css` | All styling, driven by CSS custom properties (design tokens) |
+| `script.js` | Mobile menu, concept brief toggles, services accordion, contact form validation |
+
+## Design tokens
+
+Defined at the top of `styles.css`:
+
+| Token | Value |
+| --- | --- |
+| `--ground` | `#F1EBE0` |
+| `--paper` | `#F7F2E9` |
+| `--ink` | `#1E1B18` |
+| `--muted` | `#6B6256` |
+| `--line` | `#CFC5B3` |
+| `--sand` | `#D8CDB8` |
+| `--accent` | `#A8401F` |
+
+Fonts: Instrument Serif (headlines) and Manrope (body), loaded from Google Fonts.
+
+## Contact form
+
+The form validates name, email and message on the client. It does not send data anywhere yet. To go live, add your endpoint at the `INTEGRATION POINT` comment in `script.js` and show the success state only after the request succeeds.
+
+## Deploy
+
+The site is static, so any static host works. For GitHub Pages: Settings → Pages → deploy from the `main` branch, root folder.
+
+## Accessibility
+
+- Menu, brief toggles and services accordion use `aria-expanded` / `aria-controls`
+- Form errors use `aria-invalid`
+- Scroll and entrance animations are disabled under `prefers-reduced-motion`
