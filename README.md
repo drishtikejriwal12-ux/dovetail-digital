@@ -18,7 +18,12 @@ Then visit http://localhost:8000.
 | --- | --- |
 | `index.html` | Page markup: header, hero, work, services, studio, process, contact, footer |
 | `styles.css` | All styling, driven by CSS custom properties (design tokens) |
+| `case-study-*.html` | Four full case study pages (Fieldnote, Tidewell, Marrow & Co., Plotline), each with overview, process and the screens shipped |
 | `script.js` | Mobile menu, concept brief toggles, services accordion, contact form validation |
+
+## Case studies
+
+Each card in Selected Work has a **View case study** link to its own page. The pages share `styles.css`, and the mock screens are built from HTML and CSS, so there are no image files. To swap in real screenshots, replace the contents of a `.shot-art` block with an `<img>`.
 
 ## Design tokens
 

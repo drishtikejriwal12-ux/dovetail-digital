@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Plotline — Case study · Dovetail</title>
+<meta name="description" content="Case study: A planning tool for small creative teams that makes the shape of a project visible at a glance.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <div class="nav-row">
+      <a class="brand" href="index.html" aria-label="Dovetail Digital Design Studio — home">
+        <svg width="30" height="30" viewBox="0 0 32 32" aria-hidden="true"><rect x="16" y="0" width="16" height="32" fill="var(--accent)"/><path d="M0 0H16V11L21 8V24L16 21V32H0Z" fill="#1E1B18" stroke="var(--ground)" stroke-width="1.5"/></svg>
+        <span class="serif">Dovetail</span>
+      </a>
+      <nav class="nav-links" aria-label="Primary">
+        <a class="ul" href="index.html#work" aria-current="page">Work</a>
+        <a class="ul" href="index.html#services">Services</a>
+        <a class="ul" href="index.html#studio">Studio</a>
+        <a class="ul" href="index.html#contact">Contact</a>
+        <a class="cta" href="index.html#contact">Start a Project</a>
+      </nav>
+      <button class="burger" id="burger" aria-label="Menu" aria-expanded="false" aria-controls="mmenu"><i></i><i></i><i></i></button>
+    </div>
+    <nav class="mmenu" id="mmenu" aria-label="Mobile" hidden>
+      <a href="index.html#work">Work</a>
+      <a href="index.html#services">Services</a>
+      <a href="index.html#studio">Studio</a>
+      <a href="index.html#contact">Contact</a>
+      <a href="index.html#contact" class="accent">Start a Project →</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+<section class="cs-hero" style="background:#3A332C;color:#F7F2E9">
+  <div class="wrap">
+    <a class="back" href="index.html#work">← All work</a>
+    <p class="eyebrow" style="color:inherit;opacity:.75">Case study · Digital Product Design · Productivity · Concept</p>
+    <h1 class="serif">Plotline</h1>
+    <p class="lede">A planning tool for small creative teams that makes the shape of a project visible at a glance.</p>
+  </div>
+</section>
+
+<section class="cs-sec">
+  <div class="wrap">
+    <dl class="cs-meta"><div><dt class="eyebrow">Type</dt><dd>Digital product design</dd></div><div><dt class="eyebrow">Timeline</dt><dd>10 weeks (concept)</dd></div><div><dt class="eyebrow">Role</dt><dd>Discovery, interaction design, design system</dd></div><div><dt class="eyebrow">Shipped</dt><dd>Core views, component system, prototype</dd></div></dl>
+    <p class="cs-note">This is a fictional concept project. There is no real client, and nothing here describes real results.</p>
+  </div>
+</section>
+
+<section class="cs-sec cs-border">
+  <div class="wrap cs-two">
+    <div class="rv"><p class="eyebrow">The challenge</p><p class="cs-body">Small creative teams outgrow spreadsheets but find project tools heavy, with dozens of views and settings they never use. Plotline needed to show the shape of the work without turning into another dashboard.</p></div>
+    <div class="rv"><p class="eyebrow">The approach</p><p class="cs-body">Fewer views, each with a clear job: a timeline for the whole, a board for the week, a page for each project. A compact component system keeps dense screens readable on desktop and phone alike.</p></div>
+  </div>
+</section>
+
+<section class="cs-sec cs-sand">
+  <div class="wrap">
+    <p class="eyebrow">The process</p>
+    <h2 class="serif cs-h2">Four steps, <em>one thread.</em></h2>
+    <ol class="cs-steps"><li class="rv"><span class="n serif" aria-hidden="true">01</span><div><h3 class="serif">Discover</h3><p>We looked at how small teams actually plan: on whiteboards, in chat threads and in spreadsheets. The common thread was needing to see overlap, where two things want the same person at the same time.</p><p class="out">Output: research summary and opportunity areas</p></div></li><li class="rv"><span class="n serif" aria-hidden="true">02</span><div><h3 class="serif">Define</h3><p>We limited the product to three views and wrote a rule for each: what it shows, what it hides and when you would leave it.</p><p class="out">Output: product principles and information architecture</p></div></li><li class="rv"><span class="n serif" aria-hidden="true">03</span><div><h3 class="serif">Design</h3><p>Interaction first: dragging, resizing and reassigning on the timeline. Then a small component system (tokens, cards, rows, chips) so every screen was built from the same parts.</p><p class="out">Output: design system and core screens</p></div></li><li class="rv"><span class="n serif" aria-hidden="true">04</span><div><h3 class="serif">Deliver</h3><p>A prototype of the timeline-to-board-to-detail flow, plus component documentation with usage and accessibility notes.</p><p class="out">Output: prototype and system documentation</p></div></li></ol>
+  </div>
+</section>
+
+<section class="cs-sec">
+  <div class="wrap">
+    <p class="eyebrow">What shipped</p>
+    <h2 class="serif cs-h2">Screens shipped</h2>
+    <p class="cs-sub">The core views, on desktop and phone.</p>
+    <div class="shots"><figure class="shot wide"><div class="shot-art" style="background:#3A332C;aspect-ratio:2/1" role="img" aria-label="Timeline: The whole project as one horizontal shape: who is on what, and where it will collide."><div class="browser"><div class="bchrome"><i></i><i></i><i></i><span>app.plotline.example/timeline</span></div><div class="bbody"><div style="padding:4% 5%;display:grid;gap:9px"><div style="display:flex;justify-content:space-between"><div class="serif" style="font-size:clamp(14px,1.8vw,24px);font-style:italic">Plotline</div><div style="display:flex;gap:6px"><div class="chip on">Timeline</div><div class="chip">Board</div></div></div>
+  <div style="display:grid;grid-template-columns:70px 1fr;gap:8px;align-items:center"><div style="font:600 9px Manrope,sans-serif">Research</div><div style="height:22px;background:#EFE7D8;position:relative"><div style="position:absolute;left:2%;width:26%;top:3px;bottom:3px;background:#D8CDB8"></div></div></div><div style="display:grid;grid-template-columns:70px 1fr;gap:8px;align-items:center"><div style="font:600 9px Manrope,sans-serif">Concept</div><div style="height:22px;background:#EFE7D8;position:relative"><div style="position:absolute;left:22%;width:30%;top:3px;bottom:3px;background:#1E1B18"></div></div></div><div style="display:grid;grid-template-columns:70px 1fr;gap:8px;align-items:center"><div style="font:600 9px Manrope,sans-serif">Design</div><div style="height:22px;background:#EFE7D8;position:relative"><div style="position:absolute;left:44%;width:34%;top:3px;bottom:3px;background:#A8401F"></div></div></div><div style="display:grid;grid-template-columns:70px 1fr;gap:8px;align-items:center"><div style="font:600 9px Manrope,sans-serif">Build</div><div style="height:22px;background:#EFE7D8;position:relative"><div style="position:absolute;left:66%;width:30%;top:3px;bottom:3px;background:#D8CDB8"></div></div></div><div style="display:grid;grid-template-columns:70px 1fr;gap:8px;align-items:center"><div style="font:600 9px Manrope,sans-serif">Launch</div><div style="height:22px;background:#EFE7D8;position:relative"><div style="position:absolute;left:90%;width:8%;top:3px;bottom:3px;background:#1E1B18"></div></div></div></div></div></div></div><figcaption><b>01 &nbsp;Timeline</b><span>The whole project as one horizontal shape: who is on what, and where it will collide.</span></figcaption></figure><figure class="shot"><div class="shot-art" style="background:#D8CDB8;aspect-ratio:4/3" role="img" aria-label="Board: Three columns, no more. Cards show the owner and the next date, and nothing else."><div class="browser"><div class="bchrome"><i></i><i></i><i></i><span>app.plotline.example/board</span></div><div class="bbody"><div style="padding:4% 5%;display:grid;grid-template-columns:repeat(3,1fr);gap:8px"><div style="display:grid;gap:6px;align-content:start"><div style="height:6px;width:50%;background:#6B6256;"></div><div style="background:#E7DECB;height:44px"></div><div style="background:#E7DECB;height:58px"></div></div><div style="display:grid;gap:6px;align-content:start"><div style="height:6px;width:50%;background:#6B6256;"></div><div style="background:#A8401F;height:60px"></div><div style="background:#E7DECB;height:40px"></div></div><div style="display:grid;gap:6px;align-content:start"><div style="height:6px;width:50%;background:#6B6256;"></div><div style="background:#D8CDB8;height:48px"></div></div></div></div></div></div><figcaption><b>02 &nbsp;Board</b><span>Three columns, no more. Cards show the owner and the next date, and nothing else.</span></figcaption></figure><figure class="shot"><div class="shot-art" style="background:#E7DECB;aspect-ratio:4/3" role="img" aria-label="Project detail: One page per project: brief, people, dates and a plain activity feed."><div class="browser"><div class="bchrome"><i></i><i></i><i></i><span>app.plotline.example/p/autumn</span></div><div class="bbody"><div style="padding:5% 6%;display:grid;gap:8px"><div class="serif" style="font-size:clamp(18px,2.4vw,32px);line-height:1">Autumn campaign</div><div style="height:6px;width:85%;background:#CFC5B3;"></div><div style="height:6px;width:65%;background:#CFC5B3;"></div><div style="display:flex;gap:6px;margin-top:4px"><div style="width:22px;height:22px;border-radius:50%;background:#A8401F"></div><div style="width:22px;height:22px;border-radius:50%;background:#1E1B18"></div><div style="width:22px;height:22px;border-radius:50%;background:#D8CDB8"></div></div><div style="border-top:1px solid #1E1B18;padding-top:6px;display:grid;gap:5px"><div style="height:6px;width:90%;background:#CFC5B3;"></div><div style="height:6px;width:72%;background:#CFC5B3;"></div><div style="height:6px;width:80%;background:#CFC5B3;"></div></div></div></div></div></div><figcaption><b>03 &nbsp;Project detail</b><span>One page per project: brief, people, dates and a plain activity feed.</span></figcaption></figure><figure class="shot"><div class="shot-art" style="background:#D8CDB8;aspect-ratio:4/3" role="img" aria-label="Today, on mobile: On a phone the product collapses to one question: what is due today?"><div class="phone" style="background:#F7F2E9"><div style="padding:12% 8%;display:grid;gap:8px;align-content:start;height:100%"><div class="serif" style="font-size:22px;font-style:italic">Today</div><div class="opt on"><b>Review round 2</b><span>Autumn campaign · 3 pm</span></div><div class="opt"><b>Send handoff</b><span>Site rebuild · 5 pm</span></div><div class="opt"><b>Plan next week</b><span>Studio · Friday</span></div></div></div></div><figcaption><b>04 &nbsp;Today, on mobile</b><span>On a phone the product collapses to one question: what is due today?</span></figcaption></figure></div>
+  </div>
+</section>
+
+<section class="cs-sec cs-border">
+  <div class="wrap">
+    <p class="eyebrow">What we took from it</p>
+    <div class="cs-reflect"><div class="rv"><h3 class="serif">Constraint is a feature</h3><p>Saying no to extra views is what keeps the product readable.</p></div><div class="rv"><h3 class="serif">System first, screens second</h3><p>A small component set made new screens quick and consistent.</p></div><div class="rv"><h3 class="serif">Plan for density</h3><p>Dense screens only work when spacing and type are tightly specified.</p></div></div>
+  </div>
+</section>
+
+<section class="cs-next">
+  <div class="wrap">
+    <div>
+      <p class="eyebrow">Next case study</p>
+      <a class="serif nxt" href="case-study-fieldnote.html">Fieldnote <span aria-hidden="true">→</span></a>
+    </div>
+    <a class="btn" href="index.html#contact"><span>Start a project</span><span class="ar" aria-hidden="true">→</span></a>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="fbase" style="border-top:0;margin-top:0;padding-top:0">
+      <span>© 2026 Dovetail Digital Design Studio. All rights reserved.</span>
+      <a class="ul" href="#top">Back to top ↑</a>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

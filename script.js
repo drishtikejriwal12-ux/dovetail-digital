@@ -7,8 +7,10 @@
     burger.setAttribute('aria-expanded', String(open));
     mmenu.hidden = !open;
   }
-  burger.addEventListener('click', function () { setMenu(mmenu.hidden); });
-  mmenu.addEventListener('click', function (e) { if (e.target.tagName === 'A') setMenu(false); });
+  if (burger && mmenu) {
+    burger.addEventListener('click', function () { setMenu(mmenu.hidden); });
+    mmenu.addEventListener('click', function (e) { if (e.target.tagName === 'A') setMenu(false); });
+  }
 
   // Concept brief toggles
   document.querySelectorAll('[data-toggle]').forEach(function (btn) {
@@ -31,6 +33,7 @@
   var list = document.getElementById('services-list');
   var current = 0;
   function renderServices() {
+    if (!list) return;
     list.innerHTML = '';
     services.forEach(function (s, i) {
       var open = current === i;
@@ -60,8 +63,9 @@
   }
   renderServices();
 
-  // Contact form
+  // Contact form (home page only)
   var form = document.getElementById('form');
+  if (!form) return;
   var thanks = document.getElementById('thanks');
   var f = { name: form.elements.name, email: form.elements.email, message: form.elements.message };
   var errs = { name: document.getElementById('e-name'), email: document.getElementById('e-email'), message: document.getElementById('e-msg') };

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tidewell — Case study · Dovetail</title>
+<meta name="description" content="Case study: A booking experience for a seaside studio, designed so the hardest step, choosing a session, feels like the easiest.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <div class="nav-row">
+      <a class="brand" href="index.html" aria-label="Dovetail Digital Design Studio — home">
+        <svg width="30" height="30" viewBox="0 0 32 32" aria-hidden="true"><rect x="16" y="0" width="16" height="32" fill="var(--accent)"/><path d="M0 0H16V11L21 8V24L16 21V32H0Z" fill="#1E1B18" stroke="var(--ground)" stroke-width="1.5"/></svg>
+        <span class="serif">Dovetail</span>
+      </a>
+      <nav class="nav-links" aria-label="Primary">
+        <a class="ul" href="index.html#work" aria-current="page">Work</a>
+        <a class="ul" href="index.html#services">Services</a>
+        <a class="ul" href="index.html#studio">Studio</a>
+        <a class="ul" href="index.html#contact">Contact</a>
+        <a class="cta" href="index.html#contact">Start a Project</a>
+      </nav>
+      <button class="burger" id="burger" aria-label="Menu" aria-expanded="false" aria-controls="mmenu"><i></i><i></i><i></i></button>
+    </div>
+    <nav class="mmenu" id="mmenu" aria-label="Mobile" hidden>
+      <a href="index.html#work">Work</a>
+      <a href="index.html#services">Services</a>
+      <a href="index.html#studio">Studio</a>
+      <a href="index.html#contact">Contact</a>
+      <a href="index.html#contact" class="accent">Start a Project →</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+<section class="cs-hero" style="background:#D8CDB8;color:#1E1B18">
+  <div class="wrap">
+    <a class="back" href="index.html#work">← All work</a>
+    <p class="eyebrow" style="color:inherit;opacity:.75">Case study · UX/UI Design · Wellness · Concept</p>
+    <h1 class="serif">Tidewell</h1>
+    <p class="lede">A booking experience for a seaside studio, designed so the hardest step, choosing a session, feels like the easiest.</p>
+  </div>
+</section>
+
+<section class="cs-sec">
+  <div class="wrap">
+    <dl class="cs-meta"><div><dt class="eyebrow">Type</dt><dd>UX/UI design</dd></div><div><dt class="eyebrow">Timeline</dt><dd>8 weeks (concept)</dd></div><div><dt class="eyebrow">Role</dt><dd>Research, journeys, interface, prototype</dd></div><div><dt class="eyebrow">Shipped</dt><dd>Four-step mobile booking flow and prototype</dd></div></dl>
+    <p class="cs-note">This is a fictional concept project. There is no real client, and nothing here describes real results.</p>
+  </div>
+</section>
+
+<section class="cs-sec cs-border">
+  <div class="wrap cs-two">
+    <div class="rv"><p class="eyebrow">The challenge</p><p class="cs-body">People arriving at a wellness studio's site are often tired or unsure what they need. A long list of class types and a calendar grid asks them to make several decisions at once, and many give up.</p></div>
+    <div class="rv"><p class="eyebrow">The approach</p><p class="cs-body">We reduced booking to one decision per screen, wrote every label in plain language, and made touch targets generous. The calm look is a result of fewer choices, not extra decoration.</p></div>
+  </div>
+</section>
+
+<section class="cs-sec cs-sand">
+  <div class="wrap">
+    <p class="eyebrow">The process</p>
+    <h2 class="serif cs-h2">Four steps, <em>one thread.</em></h2>
+    <ol class="cs-steps"><li class="rv"><span class="n serif" aria-hidden="true">01</span><div><h3 class="serif">Discover</h3><p>We mapped how someone goes from "I should do something for myself" to a confirmed booking, and marked every point where a person might stop. Most drop-off risk sat at the moment of choosing between session types.</p><p class="out">Output: journey map and problem statement</p></div></li><li class="rv"><span class="n serif" aria-hidden="true">02</span><div><h3 class="serif">Define</h3><p>The principle became "one decision per screen". Session types were rewritten around how a person feels, not how the studio schedules.</p><p class="out">Output: flow diagram and content model</p></div></li><li class="rv"><span class="n serif" aria-hidden="true">03</span><div><h3 class="serif">Design</h3><p>We drew the flow on paper first, then built high-fidelity screens at phone width. Contrast, touch size and focus order were set before colour.</p><p class="out">Output: interface design and component set</p></div></li><li class="rv"><span class="n serif" aria-hidden="true">04</span><div><h3 class="serif">Deliver</h3><p>A clickable prototype of all four steps, with notes on each state: empty, loading, error and success.</p><p class="out">Output: prototype and handoff notes</p></div></li></ol>
+  </div>
+</section>
+
+<section class="cs-sec">
+  <div class="wrap">
+    <p class="eyebrow">What shipped</p>
+    <h2 class="serif cs-h2">Screens shipped</h2>
+    <p class="cs-sub">The four-step booking flow, in order.</p>
+    <div class="shots"><figure class="shot"><div class="shot-art" style="background:#D8CDB8;aspect-ratio:4/3" role="img" aria-label="Choose a session: One decision: three session types, each with a plain-language description."><div class="phone" style="background:#F7F2E9"><div style="padding:12% 9%;display:flex;flex-direction:column;gap:10px;height:100%"><div class="serif" style="font-size:22px;font-style:italic">Tidewell</div><div style="font-weight:700;font-size:13px;margin-top:6px">What would help today?</div>
+  <div class="opt on"><b>Restore</b><span>60 min · slow movement</span></div><div class="opt"><b>Float</b><span>45 min · quiet and warm</span></div><div class="opt"><b>Talk it through</b><span>30 min · with a guide</span></div>
+  <div class="mbtn" style="margin-top:auto">Continue</div></div></div></div><figcaption><b>01 &nbsp;Choose a session</b><span>One decision: three session types, each with a plain-language description.</span></figcaption></figure><figure class="shot"><div class="shot-art" style="background:#D8CDB8;aspect-ratio:4/3" role="img" aria-label="Pick a time: Times are large, tappable chips; only open slots are shown."><div class="phone" style="background:#F7F2E9"><div style="padding:12% 9%;display:flex;flex-direction:column;gap:10px;height:100%"><div style="font-weight:700;font-size:13px">Thursday</div>
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px"><div class="chip">8:00</div><div class="chip on">9:30</div><div class="chip">11:00</div><div class="chip">12:30</div><div class="chip">4:00</div><div class="chip">5:30</div></div>
+  <div class="mbtn" style="margin-top:auto">Continue</div></div></div></div><figcaption><b>02 &nbsp;Pick a time</b><span>Times are large, tappable chips; only open slots are shown.</span></figcaption></figure><figure class="shot"><div class="shot-art" style="background:#D8CDB8;aspect-ratio:4/3" role="img" aria-label="Confirm: Everything chosen is shown once, in sentences, before anything is final."><div class="phone" style="background:#F7F2E9"><div style="padding:12% 9%;display:flex;flex-direction:column;gap:10px;height:100%"><div style="font-weight:700;font-size:13px">Your booking</div>
+  <div style="font:400 17px/1.2 'Instrument Serif',serif">Restore, Thursday<br>at 9:30</div><div style="height:7px;width:90%;background:#CFC5B3;"></div><div style="height:7px;width:65%;background:#CFC5B3;"></div><div class="mbtn" style="margin-top:auto;background:var(--accent)">Book session</div><div style="text-align:center;font-size:11px;font-weight:600">Change</div></div></div></div><figcaption><b>03 &nbsp;Confirm</b><span>Everything chosen is shown once, in sentences, before anything is final.</span></figcaption></figure><figure class="shot"><div class="shot-art" style="background:#D8CDB8;aspect-ratio:4/3" role="img" aria-label="Booked: A calm confirmation with the one thing people need next: how to get there."><div class="phone" style="background:#F7F2E9"><div style="padding:12% 9%;display:flex;flex-direction:column;align-items:center;gap:12px;height:100%;text-align:center"><div style="width:54px;height:54px;border-radius:50%;background:var(--accent);margin-top:18%;display:flex;align-items:center;justify-content:center;color:#F7F2E9;font-size:26px">✓</div>
+  <div class="serif" style="font-size:24px;line-height:1.05;font-style:italic">See you<br>Thursday</div><div style="height:7px;width:70%;background:#CFC5B3;"></div><div class="mbtn" style="margin-top:auto;width:100%;background:transparent;color:#1E1B18;border:1px solid #1E1B18">Directions</div></div></div></div><figcaption><b>04 &nbsp;Booked</b><span>A calm confirmation with the one thing people need next: how to get there.</span></figcaption></figure></div>
+  </div>
+</section>
+
+<section class="cs-sec cs-border">
+  <div class="wrap">
+    <p class="eyebrow">What we took from it</p>
+    <div class="cs-reflect"><div class="rv"><h3 class="serif">Fewer choices, more bookings (to test)</h3><p>The flow is built to be measured: the next step would be testing completion against the old calendar view.</p></div><div class="rv"><h3 class="serif">Words are interface</h3><p>Renaming session types did as much work as any layout change.</p></div><div class="rv"><h3 class="serif">Design the quiet states</h3><p>Confirmation and error screens are where trust is built.</p></div></div>
+  </div>
+</section>
+
+<section class="cs-next">
+  <div class="wrap">
+    <div>
+      <p class="eyebrow">Next case study</p>
+      <a class="serif nxt" href="case-study-marrow-and-co.html">Marrow &amp; Co. <span aria-hidden="true">→</span></a>
+    </div>
+    <a class="btn" href="index.html#contact"><span>Start a project</span><span class="ar" aria-hidden="true">→</span></a>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="fbase" style="border-top:0;margin-top:0;padding-top:0">
+      <span>© 2026 Dovetail Digital Design Studio. All rights reserved.</span>
+      <a class="ul" href="#top">Back to top ↑</a>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
